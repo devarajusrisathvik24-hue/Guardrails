@@ -1,12 +1,8 @@
 
-define user ask about cricket
-  "Tell me today's cricket score"
-  "Who won the cricket match?"
-  "Explain cricket rules"
+define flow block cricket questions
+  if "cricket" in $user_message
+    bot refuse cricket
+    stop
 
 define bot refuse cricket
-  "I'm a Python learning assistant, so I can't help with cricket topics. Ask me something about Python instead."
-
-define flow
-  user ask about cricket
-  bot refuse cricket
+  "I'm a Python learning assistant, so I can't help with cricket topics. Please ask me something about Python instead."

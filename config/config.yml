@@ -4,4 +4,9 @@ models:
     engine: ollama
     model: llama3.2:1b
     parameters:
-      base_url: "http://localhost:11434/v1"
+      base_url: "http://localhost:11434"
+
+rails:
+  input:
+    flows:
+      - block cricket questions

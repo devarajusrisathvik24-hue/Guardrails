@@ -8,7 +8,7 @@ response = rails.generate(
     messages=[
         {
             "role": "user",
-            "content": "Explain cricket rules"
+            "content": "Explain Python functions"
         }
     ]
 )
