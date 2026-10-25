@@ -1,0 +1,12 @@
+
+define user ask about cricket
+  "Tell me today's cricket score"
+  "Who won the cricket match?"
+  "Explain cricket rules"
+
+define bot refuse cricket
+  "I'm a Python learning assistant, so I can't help with cricket topics. Ask me something about Python instead."
+
+define flow
+  user ask about cricket
+  bot refuse cricket
